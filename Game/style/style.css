@@ -1,0 +1,45 @@
+.PB {
+    background-color: rgb(227, 221, 188);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 20%;
+    height: fit-content;
+    justify-content: space-around;
+    overflow: hidden;
+}
+body {
+    margin: 0px;
+    padding: 0;
+}
+.LB {
+    width: 100%;
+    display: flex;
+    border-bottom: 5px 5px black;
+    flex-direction: row;
+    
+}
+.OD {
+
+}
+.ra {
+    margin-left: 70%;
+}
+.Next {
+    margin-left: 10px;
+    background-color: rgb(57, 33, 33);
+    width:6vw;
+    height: 8vh;
+    border-radius: 55px 0px 0px 55px;
+    border-color: black;
+}
+.Next:hover {
+    background-color: rgb(101, 74, 74);
+    transition: 1s;
+    cursor:pointer;
+}
+.ta{
+width: 2vw;
+height: 8vh;
+background-color: rgb(105, 105, 86);
+}
