@@ -196,7 +196,7 @@ function turnvalue() {
     Admin += adminvalue
     Economics += ecovalue
     Mil += milvalue
-    mv += 10
+    mv += totalGain
 
     updateValues()
 }

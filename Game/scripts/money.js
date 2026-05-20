@@ -91,11 +91,15 @@ function tradecalc() {
     tradegain = tradeprod * tradeEfficiency
     console.log("trade prod is", tradeprod)
     console.log("tradegain is", tradegain)
-
+    moneycalc()
 }
 
 function moneycalc() {
+    m1 = Math.round(tradegain)
+    m2 = Math.round(tprod)
+    m3 = taxgain
 
+    totalGain = m1 + m2 + m3
 
 
 
