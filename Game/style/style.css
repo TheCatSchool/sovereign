@@ -8,38 +8,218 @@
     justify-content: space-around;
     overflow: hidden;
 }
+
 body {
     margin: 0px;
     padding: 0;
 }
+
 .LB {
     width: 100%;
     display: flex;
     border-bottom: 5px 5px black;
     flex-direction: row;
-    
-}
-.OD {
 
 }
+
+.OD {}
+
 .ra {
     margin-left: 70%;
 }
+
 .Next {
     margin-left: 10px;
     background-color: rgb(57, 33, 33);
-    width:6vw;
+    width: 6vw;
     height: 8vh;
     border-radius: 55px 0px 0px 55px;
     border-color: black;
 }
+
 .Next:hover {
     background-color: rgb(101, 74, 74);
     transition: 1s;
-    cursor:pointer;
+    cursor: pointer;
 }
-.ta{
-width: 2vw;
-height: 8vh;
-background-color: rgb(105, 105, 86);
+
+.ta {
+    width: 5vw;
+    height: 8vh;
+    background-color: rgb(105, 105, 86);
+}
+
+.ta1 {
+    width: 5vw;
+    height: 50vh;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.toper {
+    background-color: rgb(105, 105, 86);
+    width: 5vw;
+    height: 7vh;
+}
+
+.menuopen {
+    margin-top: 3vh;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(77, 33, 33);
+    color: white;
+    outline: 1px solid white;
+    font-size: x-small;
+    align-items: center;
+    text-align: center;
+}
+
+.menuopen:hover {
+    background-color: rgb(91, 71, 71);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.largecentermenu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    width: 25vw;
+    height: 50%;
+    margin-left: 12vw;
+    top: 10vh;
+}
+.LCM-T  {
+    margin-top: 2vh;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    height: 5%;
+}
+.LCM-C {
+    margin-top: 2vh;
+    display: flex;
+    background-color: rgb(174, 174, 174);
+    width: 80%;
+    height: 50%;
+}
+.law-btn {
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    padding: 8px;
+    background-color: rgb(77, 33, 33);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: small;
+    transition: 0.3s;
+}
+
+.law-btn:hover {
+    background-color: rgb(91, 71, 71);
+}
+
+.law-btn-active {
+    background-color: rgb(140, 60, 60);
+    outline: 2px solid gold;
+}
+.estate-box {
+    width: 90%;
+    margin: 6px auto;
+    background-color: rgb(90, 45, 45);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+
+.estate-header {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+.estate-name {
+    color: gold;
+    font-size: small;
+    font-weight: bold;
+}
+
+.estate-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.estate-stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: x-small;
+    color: white;
+}
+
+.stat-label {
+    width: 55px;
+    color: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+}
+
+.stat-bar-bg {
+    flex: 1;
+    height: 6px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.stat-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.loyalty-bar {
+    background-color: rgb(80, 180, 100);
+}
+
+.influence-bar {
+    background-color: rgb(100, 140, 210);
+}
+
+.stat-val {
+    width: 24px;
+    text-align: right;
+    flex-shrink: 0;
+    color: rgba(255,255,255,0.85);
+}
+
+.largestcentermenu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    width: 45vw;
+    height: 50%;
+    margin-left: 12vw;
+    top: 10vh;
+}
+.LCM-TT {
+    margin-top: 2vh;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    height: 5%;
+}
+.LCM-CT {
+    margin-top: 2vh;
+    display: flex;
+    background-color: rgb(174, 174, 174);
+    width: 80%;
+    height: 50%;
 }

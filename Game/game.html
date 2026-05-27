@@ -8,7 +8,7 @@
 
 <body>
     <div class="LB">
-        <div class="ta"></div>
+
         <div class="PB" id="PB">
             <div class="PA" id="PA"></div>
             <div class="PE" id="PE"></div>
@@ -23,15 +23,32 @@
             <div class="Next" id="Next">
             </div>
         </div>
-        <div class="ta">
 
-        </div>
 
-    </div>
 
     </div>
+    <div class="ta1">
+        <div class="toper"></div>
+        <div class="Laws"><button class="menuopen" onclick="openMenu(1)">State-laws</button></div>
+        <div class="Estates"><button class="menuopen" onclick="openMenu(2)">Estates</button></div>
+        <div class="Stability"><button class="menuopen" onclick="openMenu(3)">Stability</button></div>
+        <div class="Economics"><button class="menuopen" onclick="openMenu(4)">Economics</button></div>
+    </div>
+    <div class="ta">
 
-    <div></div>
+    </div>
+    <div class="largecentermenu">
+        <button class="LCM-close" onclick="closeMenu()">✕</button>
+        <div class="LCM-T"></div>
+        <div class="LCM-C"></div>
+
+    </div>
+     <div class="largestcentermenu">
+        <button class="LCMT-close" onclick="closeMenu()">✕</button>
+        <div class="LCM-TT"></div>
+        <div class="LCM-CT"></div>
+
+    </div>
 </body>
 
 </html>
@@ -39,4 +56,6 @@
 <script src="/Game/scripts/points.js"></script>
 <script src="/Game/scripts/rounds.js"></script>
 <script src="/Game/scripts/money.js"></script>
+<script src="/Game/scripts/menu.js"></script>
+<script src="/Game/scripts/events.js"></script>
 <link rel="stylesheet" href="style/style.css">

@@ -24,7 +24,8 @@ const AdminpointgainMods = [
         id: "A1",
         name: "Adminfocus",
         valueC: 5,
-        Active: 1
+        Active: 0,
+        type: "law"
 
 
     },
@@ -32,7 +33,8 @@ const AdminpointgainMods = [
         id: "A2",
         name: "EcofocusAdmin",
         valueC: -2.5,
-        Active: 0
+        Active: 0,
+        type: "lawaf"
 
 
     },
@@ -40,7 +42,8 @@ const AdminpointgainMods = [
         id: "A3",
         name: "MilFocusAdmin",
         valueC: -2.5,
-        Active: 0
+        Active: 0,
+        type: "lawaf"
 
 
     },
@@ -62,7 +65,8 @@ const EcopointgainMods = [
         id: "E1",
         name: "Ecofocus",
         valueC: 5,
-        Active: 0
+        Active: 0,
+        type: "law"
 
 
     },
@@ -70,7 +74,8 @@ const EcopointgainMods = [
         id: "E2",
         name: "AdminfocusEco",
         valueC: -2.5,
-        Active: 1
+        Active: 1,
+        type: "lawaf"
 
 
     },
@@ -78,7 +83,8 @@ const EcopointgainMods = [
         id: "E3",
         name: "MilFocusEco",
         valueC: -2.5,
-        Active: 0
+        Active: 0,
+        type: "lawaf"
 
 
     },
@@ -92,7 +98,8 @@ const MilpointgainMods = [
         id: "M1",
         name: "Milfocus",
         valueC: 5,
-        Active: 0
+        Active: 0,
+        type: "law"
 
 
     },
@@ -100,15 +107,16 @@ const MilpointgainMods = [
         id: "M2",
         name: "AdminfocusMil",
         valueC: -2.5,
-        Active: 1
-
+        Active: 1,
+        type: "lawaf"
 
     },
     {
         id: "M3",
         name: "EcoFocusMil",
         valueC: -2.5,
-        Active: 0
+        Active: 0,
+        type: "lawaf"
 
 
     },
