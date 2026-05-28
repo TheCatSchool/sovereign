@@ -264,6 +264,7 @@ function triggerRandomEvent() {
         </div>
     `;
 
+    document.getElementById('event-overlay').style.display = 'block';
     menu.style.display = 'flex';
 }
 
@@ -272,19 +273,20 @@ function applyChoice(eventId, choiceId) {
     const choice = event.choices.find(c => c.cid === choiceId);
 
     switch (choice.eftype) {
-        case "money":        mv += choice.ef; break;
-        case "Admin":        Admin += choice.ef; break;
-        case "Eco":          Economics += choice.ef; break;
-        case "Mil":          Mil += choice.ef; break;
-        case "NLoyal":       Estates.find(e => e.Name === "Nobility").loyal += choice.ef; break;
-        case "BLoyal":       Estates.find(e => e.Name === "Bourgeoisie").loyal += choice.ef; break;
-        case "CLoyal":       Estates.find(e => e.Name === "Clergy").loyal += choice.ef; break;
-        case "PLoyal":       Estates.find(e => e.Name === "Peasentry").loyal += choice.ef; break;
-        case "NInfluence":   Estates.find(e => e.Name === "Nobility").influence += choice.ef; break;
-        case "BInfluence":   Estates.find(e => e.Name === "Bourgeoisie").influence += choice.ef; break;
-        case "CInfluence":   Estates.find(e => e.Name === "Clergy").influence += choice.ef; break;
+        case "money":       mv += choice.ef; break;
+        case "Admin":       Admin += choice.ef; break;
+        case "Eco":         Economics += choice.ef; break;
+        case "Mil":         Mil += choice.ef; break;
+        case "NLoyal":      Estates.find(e => e.Name === "Nobility").loyal += choice.ef; break;
+        case "BLoyal":      Estates.find(e => e.Name === "Bourgeoisie").loyal += choice.ef; break;
+        case "CLoyal":      Estates.find(e => e.Name === "Clergy").loyal += choice.ef; break;
+        case "PLoyal":      Estates.find(e => e.Name === "Peasentry").loyal += choice.ef; break;
+        case "NInfluence":  Estates.find(e => e.Name === "Nobility").influence += choice.ef; break;
+        case "BInfluence":  Estates.find(e => e.Name === "Bourgeoisie").influence += choice.ef; break;
+        case "CInfluence":  Estates.find(e => e.Name === "Clergy").influence += choice.ef; break;
     }
 
     updateValues();
+    document.getElementById('event-overlay').style.display = 'none';
     document.querySelector('.largestcentermenu').style.display = 'none';
 }

@@ -31,9 +31,9 @@ Estates = [
                 modifers2: "constcost", //construction cost 
                 //      Tier two:
                 modifers3: "ecogain", //turnly eco gain or eco loss
-                modifers4: "", //posetive events
+                modifers4: "rev-gain", //posetive events
                 //      Tier three: 
-                modifers5: "NobLoyalEvents2", //extremly posetive event chance or doomsday events
+                modifers5: "", //extremly posetive event chance or doomsday events
 
             }
         ]
@@ -67,7 +67,8 @@ Clergy = Estates.find(estate => estate.Name === "Clergy")
 Peasentry = Estates.find(estate => estate.Name === "Peasentry")
 
 function loyaltycheck(estate) {
-    if (estate.loyal >= 20) {
+    if (estate.loyal <= 20) {
+        console.log(estate.Name, "loyality is 20")
         if (estate.influence <= 20) {
 
         }
@@ -84,7 +85,24 @@ function loyaltycheck(estate) {
 
 
     }
-    if (estate.loyal <= 60) {
+    if (estate.loyal >= 60) {
+        console.log(estate.Name, "loyality is 60")
+        if (estate.influence <= 20) {
+
+        }
+        if (estate.influence <= 40) {
+
+        }
+        if (estate.influence <= 60) {
+
+        }
+        if (estate.influence <= 80) {
+
+        }
+
+    }
+    if (estate.loyal >= 40) {
+        console.log(estate.Name, "loyality is 40")
         if (estate.influence <= 20) {
 
         }
@@ -100,7 +118,8 @@ function loyaltycheck(estate) {
 
     }
 
-    if (estate.loyal <= 75) {
+    if (estate.loyal >= 75) {
+        console.log(estate.Name, "loyality is 75")
         if (estate.influence <= 20) {
 
         }
@@ -115,7 +134,8 @@ function loyaltycheck(estate) {
         }
 
     }
-    if (estate.loyal <= 90) {
+    if (estate.loyal >= 90) {
+        console.log(estate.Name, "loyality is 90")
         if (estate.influence <= 20) {
 
         }

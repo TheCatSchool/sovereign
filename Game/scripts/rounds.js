@@ -8,4 +8,8 @@ function newround() {
     round += 1;
     turn()
     triggerRandomEvent()
+    loyaltycheck(Nobility)
+    loyaltycheck(Bourgeoisie)
+    loyaltycheck(Clergy)
+    loyaltycheck(Peasentry)
 }
